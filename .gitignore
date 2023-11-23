@@ -1,0 +1,8 @@
+.env
+
+*.sketch
+
+*.xd
+*.fig
+
+.DS_Store
