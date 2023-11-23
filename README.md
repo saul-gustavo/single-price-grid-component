@@ -1,3 +1,6 @@
+![single-price-card](https://github.com/Saul-Gustavo/single-price-grid-component/assets/110861830/a70ef803-9b6a-4aea-bb9a-13f133db62f1)
+
+# Single Price Card Component
 
 Este es el primer desafio que se modifico durante los dias escritos abajo.
 
