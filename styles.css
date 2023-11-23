@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root{
+
+    /* colores primarios */
+    --color-cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    /* colores neutrales */
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    /* font-weight  400 y 700 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+.card {
+    max-width: 650px;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px 10px rgba(37, 43, 70, 0.1);
+}
+
+.comunidad {
+    padding: 40px;
+}
+
+.title-up {
+    color: var(--color-cyan);
+    padding-bottom: 25px;
+    opacity: 0.9;
+}
+
+.sub {
+    font-weight: bold;
+    color: var(--bright-yellow);
+    padding-bottom: 16px;
+    opacity: 0.9;
+}
+
+.text {
+    color: var(--grayish-blue);
+    line-height: 30px;
+    opacity: 0.7;
+    width: 570px;
+}
+
+.plan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sub-plan {
+    padding: 40px;
+    border-bottom-left-radius: 20px;
+    background-color: var(--color-cyan);
+    color: #ffff;
+}
+
+.title-two {
+    padding-bottom: 18px;
+    opacity: 0.9;
+}
+
+.price {
+    display: inline-flex;
+}
+
+.price h1 {
+    font-size: 2.6rem;
+}
+
+.price .price-p {
+    opacity: 0.8;
+    padding: 18px 0px 0px 12px;
+}
+
+.access {
+    padding: 10px 0px 10px 0px;
+    opacity: 0.8;
+}
+
+.btn {
+    margin-top: 10px;
+    width: 250px;
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: var(--bright-yellow);
+    color: white;
+    border: none;
+    box-shadow: 0 15px 20px 10px rgba(37, 43, 70, 0.1);
+}
+
+.btn:hover {
+    transition: 0.3s ease;
+    box-shadow: 1px 10px 19px 9px rgba(37, 43, 70, 0.2);
+    cursor: pointer;
+}
+
+.why {
+    padding: 40px;
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.8;
+    color: #fff;
+    border-bottom-right-radius: 18px;
+}
+
+.why .title-why {
+    padding-bottom: 20px;
+    opacity: 0.8;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    padding-bottom: 3px;
+    font-size: 16px;
+    opacity: 0.6;
+} 
+
+.attribution {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        overflow-y: auto;
+        border-radius: 10px;
+        box-shadow: 0 15px 20px 10px rgba(37, 43, 70, 0.1);
+    }
+
+    .plan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comunidad {
+        padding-right: 20px;
+    }
+
+    .why, .sub-plan {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .attribution {
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .comunidad {
+        width: 100%;
+    }
+
+    .text {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .card {
+        width: 90%;
+        overflow-x: hidden;
+        border-radius: 10px;
+        box-shadow: 0 15px 20px 10px rgba(37, 43, 70, 0.1);
+    }
+
+    .comunidad {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .text {
+        width: 310px;
+        line-height: 1.5;
+        padding: 0px 1px 0.76rem 0px;
+    }
+
+    .sub-plan {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 290px;
+        box-shadow: 0 15px 20px 10px rgba(37, 43, 70, 0.1);
+    }
+
+    .why {
+        padding: 22px;
+    }
+
+
+    .attribution {
+        padding-bottom: 1rem;
+    }
+
+}
